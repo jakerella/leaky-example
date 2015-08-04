@@ -1,0 +1,17 @@
+{
+  "name": "leaky-example",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An example application with memory leaks",
+  "main": "leaky.js",
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jakerella/leaky-example.git"
+  },
+  "author": "Jordan Kasper <jordan@jordankasper.com> (http://jordankasper.com/)",
+  "license": "MIT"
+}
