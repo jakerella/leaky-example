@@ -37,11 +37,11 @@ app.listen(port, function() {
     });
     
     console.log('\nMemory Usage (1s interval, in MB)');
-    var label = '----15---30---45---60---75---90-------120-------150-------180-------210-------240-------270-------300';
+    var label = '----15---30---45---60---75---90-------120-------150-------180-------210-------240-------270-------300 MB';
     var labelTick = 0;
     console.log(label);
     setInterval(function printMemoryUsage() {
-        var memMB = process.memoryUsage().rss / 1048576;
+        var memMB = process.memoryUsage().heapUsed / 1048576;
         var chartPoint = '';
         
         for (var i=0, l=Math.round(memMB); i<l; i+=3) {
